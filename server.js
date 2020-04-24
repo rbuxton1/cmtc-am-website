@@ -22,5 +22,8 @@ app.get("/panel", function(req, res){
 app.get("/pedestal", function(req, res){
   res.render("pedestal");
 });
+app.get("/ar", function(req, res){
+  res.render("ar");
+})
 
 app.listen(3000, function(){ console.log("Listening on port 3000!"); });

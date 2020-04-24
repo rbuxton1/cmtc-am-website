@@ -1,0 +1,26 @@
+@font-face {
+  font-family: kiona;
+  src: url("Kiona-Regular.ttf") format("truetype");
+}
+
+:root {
+  --cm-offwhite: rgb(240, 237, 230);
+  --cm-black: rgb(28, 31, 36);
+  --cm-lightgray: rgb(206, 210, 219);
+  --cm-blue: rgb(2, 89, 140);
+  --cm-gray: rgb(61, 65, 76);
+  --cm-red: rgb(217, 86, 47);
+}
+
+.cm-h1 {
+  font-family: kiona;
+}
+
+.cm-tp {
+  background-color: var(--cm-lightgray);
+}
+
+.cm-textbox {
+  background-color: var(--cm-offwhite);
+  opacity: 50%;
+}
