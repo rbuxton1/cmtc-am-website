@@ -1,0 +1,2 @@
+To run this example you will need NodeJS installed on your computer (https://nodejs.org/en/).
+Once you have that installed, navigate to PowerShell if on Windows and Command Prompt if on Mac/Linux. Once there type "cd <path to files>", IE "cd Downloads/cmtc-am-website" (depending on where you downloaded and extracted them to). Once in the directly type "node server.js" and then navigate to "localhost:3000" in your web browser of choice. To stop the program hit Control + C in the command prompt / PowerShell window.
