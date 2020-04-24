@@ -28,6 +28,9 @@ app.get("/ar", function(req, res){
 
 app.get("/t/items", function(req, res){
   res.render("transition", {video: "bishop", target: "/items"});
-})
+});
+app.get("/t/panel", function(req, res){
+  res.render("transition", {video: "panel", target: "/panel"});
+});
 
 app.listen(3000, function(){ console.log("Listening on port 3000!"); });
