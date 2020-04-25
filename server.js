@@ -27,7 +27,8 @@ app.get("/ar", function(req, res){
 })
 
 app.get("/t/items", function(req, res){
-  res.render("transition", {video: "bishop", target: "/items"});
+  //res.render("transition", {video: "bishop", target: "/items"});
+  res.redirect("/items")
 });
 app.get("/t/panel", function(req, res){
   res.render("transition", {video: "panel", target: "/panel"});
