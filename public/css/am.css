@@ -17,10 +17,31 @@
 }
 
 .cm-tp {
-  background-color: var(--cm-lightgray);
+  background-color: var(--cm-black);
+  color: var(--cm-offwhite);
 }
 
 .cm-textbox {
-  background-color: var(--cm-offwhite);
-  opacity: 50%;
+  width:75%;
+  margin:auto;
+}
+
+.cm-button {
+  background-color: var(--cm-red);
+  color: var(--cm-offwhite);
+  width: 50%;
+}
+
+.cm-acordian {
+  background-color: var(--cm-lightgray);
+  color: var(--cm-black);
+}
+
+.cm-footer {
+  background-color: var(--cm-black);
+  color: var(--cm-offwhite);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

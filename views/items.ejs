@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/am.css">
+    <script src="js/general.js"></script>
     <title> Items </title>
   </head>
   <style>
@@ -20,53 +21,138 @@
         Each one of these items can be made using AM techniques.
       </div>
       <br>
-      <div class="w3-row">
-        <div class="w3-col m3 l3 w3-container">
-          <video src="renders/chess_all.mp4" loop autoplay type="video/mp4">Not working?</video>
-        </div>
-        <div class="w3-col m9 l9 w3-container">
-          <div class="w3-xlarge">
-            Item Name
+
+      <div class="w3-container w3-center cm-textbox">
+        The number and variaty of areas that can bennifit from additive manufacturing are vast and varried. Below we have organized some of the examples that our team have made and found into four easy categories: static items, dynamic items, recreational items, and artistic items. Click on each drop down to read about that area! <br>
+        <button class="w3-button cm-button" onclick="expand('static')" style="width:50%;">Static Items</button>
+        <div id="static" class="w3-conatiner w3-hide">
+          <div class="w3-row">
+            <div class="w3-col m3 l3 w3-container">
+              <img src="static/astrolabicon.jpg" alt="">
+            </div>
+            <div class="w3-col m9 l9 w3-container">
+              <div class="w3-xlarge">
+                Astrolabican
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
+          <hr>
+          <div class="w3-row">
+            <div class="w3-col m3 l3 w3-container">
+              <img src="static/rod_node.png" alt="">
+            </div>
+            <div class="w3-col m9 l9 w3-container">
+              <div class="w3-xlarge">
+                Rod and Nodes
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <button class="w3-button cm-button" onclick="expand('dynamic')" style="width:50%;">Dynamic Items</button>
+        <div id="dynamic" class="w3-conatiner w3-hide">
+          <div class="w3-row">
+            <div class="w3-col m3 l3 w3-container">
+              <img src="static/tourbillion.png" alt="">
+            </div>
+            <div class="w3-col m9 l9 w3-container">
+              <div class="w3-xlarge">
+                Tourbillion
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="w3-row">
+            <div class="w3-col m3 l3 w3-container">
+              <img src="static/v8.png" alt="">
+            </div>
+            <div class="w3-col m9 l9 w3-container">
+              <div class="w3-xlarge">
+                V8 Engine
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <button class="w3-button cm-button" onclick="expand('recreational')" style="width:50%;">Recreational Items</button>
+        <div id="recreational" class="w3-container w3-hide">
+          <div class="w3-row">
+            <div class="w3-col m3 l3 w3-container">
+              <video src="renders/chess_all.mp4" loop autoplay type="video/mp4">Not working?</video>
+            </div>
+            <div class="w3-col m9 l9 w3-container">
+              <div class="w3-xlarge">
+                Item Name
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="w3-row">
+            <div class="w3-col m3 l3 w3-container">
+              <video src="renders/bishop.mp4" loop autoplay type="video/mp4">Not working?</video>
+            </div>
+            <div class="w3-col m9 l9 w3-container">
+              <div class="w3-xlarge">
+                Item Name
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="w3-row">
+            <div class="w3-col m3 l3 w3-container">
+              <video src="renders/pawn.mp4" loop autoplay type="video/mp4">Not working?</video>
+            </div>
+            <div class="w3-col m9 l9 w3-container">
+              <div class="w3-xlarge">
+                Item Name
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="w3-row">
+            <div class="w3-col m3 l3 w3-container">
+              <video src="renders/queen.mp4" loop autoplay type="video/mp4">Not working?</video>
+            </div>
+            <div class="w3-col m9 l9 w3-container">
+              <div class="w3-xlarge">
+                Item Name
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <button class="w3-button cm-button" onclick="expand('artistic')" style="width:50%;">Artistic Items</button>
+        <div id="artistic" class="w3-conatiner w3-hide">
+          <div class="w3-cell-row w3-center">
+            <div class="w3-cell">
+              <img src="static/shadow_orb/projection.jpg" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/shadow_orb/render.jpg" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/shadow_orb/face.jpg" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/shadow_orb/reverse.jpg" alt="" style="max-height:400px;">
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <img src="static/shadow_orb/optionals.jpg" alt="">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
       </div>
-      <hr>
-      <div class="w3-row">
-        <div class="w3-col m3 l3 w3-container">
-          <video src="renders/bishop.mp4" loop autoplay type="video/mp4">Not working?</video>
-        </div>
-        <div class="w3-col m9 l9 w3-container">
-          <div class="w3-xlarge">
-            Item Name
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="w3-row">
-        <div class="w3-col m3 l3 w3-container">
-          <video src="renders/pawn.mp4" loop autoplay type="video/mp4">Not working?</video>
-        </div>
-        <div class="w3-col m9 l9 w3-container">
-          <div class="w3-xlarge">
-            Item Name
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="w3-row">
-        <div class="w3-col m3 l3 w3-container">
-          <video src="renders/queen.mp4" loop autoplay type="video/mp4">Not working?</video>
-        </div>
-        <div class="w3-col m9 l9 w3-container">
-          <div class="w3-xlarge">
-            Item Name
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="w3-container cm-footer w3-center w3-padding">
+      <a href="https://comcastmediatechcenter.org/">Comcast Media and Technology Center 2020</a>
     </div>
   </body>
 </html>

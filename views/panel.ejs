@@ -3,10 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/am.css">
+    <script src="js/general.js"></script>
     <title> Panel / Cabinet </title>
   </head>
   <body class="cm-tp">
-    <div class="w3-container w3-center" style="width:100%;">
+    <div class="w3-container w3-center">
       <div class="cm-h1 w3-xxxlarge w3-center">
         Cabinet and Virtual Screens
       </div>
@@ -15,75 +16,85 @@
       </div>
       <br>
 
-      <div class="cm-h1 w3-xxlarge">
-        Topological optimization
+      <div class="w3-container w3-center cm-textbox">
+        <button class="w3-button cm-button" onclick="expand('cabinet')" style="width:50%;">Cabinet</button>
+        <div id="cabinet" class="w3-container w3-hide">
+          <div class="w3-cell-row w3-center">
+            <div class="w3-cell">
+              <img src="static/cabinet1.jpg" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/cabinet2.jpg" alt="" style="max-height:400px;">
+            </div>
+          </div>
+          <p>
+            <!-- ACTUALLY PUT INFO HERE -->
+            These are some recent ideas of what the cabinets may look like.
+          </p>
+
+          <div class="w3-xxlarge cm-h1">
+            Techniques Used
+          </div>
+          <button class="w3-button cm-button" onclick="expand('topo')">Topological Optimization</button>
+          <div id="topo" class="w3-container w3-hide">
+            <div class="w3-cell-row w3-center">
+              <div class="w3-cell">
+                <img src="static/panel_opt1.png" alt="" style="max-height:400px;">
+              </div>
+              <div class="w3-cell">
+                <img src="static/panel_opt2.png" alt="" style="max-height:400px;">
+              </div>
+              <div class="w3-cell">
+                <img src="static/panel_opt3.png" alt="" style="max-height:400px;">
+              </div>
+            </div>
+            <p>
+              <!-- ACTUALLY PUT INFO HERE -->
+              Topological Optimization is the process of optimizing topologically. This process can be seen in the different shapes taken on in the images above. They form this way because
+            </p>
+          </div>
+        </div>
+
+        <button class="w3-button cm-button" onclick="expand('screens')" style="width:50%;">Screens</button>
+        <div id="screens" class="class w3-container w3-hide">
+          <div class="w3-cell-row w3-center">
+            <div class="w3-cell">
+              <img src="static/screen_physical1.jpg" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/screen_physical2.jpg" alt="" style="max-height:400px;">
+            </div>
+          </div>
+          <p>
+            This is what the screens looked like during development of the cabinet. Notice that they are on temporary stands and that the version of the system running on them may be slightly different from that which you would see in person (or through the web versions available below).
+          </p>
+          <div class="w3-cell-row w3-center">
+            <div class="w3-cell">
+              <img src="static/screen1.png" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/screen2.png" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/screen3.png" alt="" style="max-height:400px;">
+            </div>
+          </div>
+          <p>
+            <!-- ACTUALLY PUT INFO HERE -->
+            These are screenshots of the screen aplication running. These images showcase how we hope to use this Technology to convey how the modernday advances of additive manufacturing are being put into use.
+
+            <!-- Special click here to see the real deal doing its thing! -->
+            <div class="cm-h1 w3-xlarge">
+              Want to see these screens live? Well now you can! <a href="">Click here</a> for the left screen or <a href="">click here</a> to see the right one.
+            </div>
+          </p>
+        </div>
       </div>
-      <div class="w3-cell-row w3-center">
-        <div class="w3-cell">
-          <img src="static/panel_opt1.png" alt="" style="max-height:400px;">
-        </div>
-        <div class="w3-cell">
-          <img src="static/panel_opt2.png" alt="" style="max-height:400px;">
-        </div>
-        <div class="w3-cell">
-          <img src="static/panel_opt3.png" alt="" style="max-height:400px;">
-        </div>
-      </div>
-      <p>
-        <!-- ACTUALLY PUT INFO HERE -->
-        Topological Optimization is the process of optimizing topologically. This process can be seen in the different shapes taken on in the images above. They form this way because
-      </p>
+
       <br>
-
-      <div class="cm-h1 w3-xxlarge">
-        Cabinet design sketches
-      </div>
-      <div class="w3-cell-row w3-center">
-        <div class="w3-cell">
-          <img src="static/cabinet1.jpg" alt="" style="max-height:400px;">
-        </div>
-        <div class="w3-cell">
-          <img src="static/cabinet2.jpg" alt="" style="max-height:400px;">
-        </div>
-      </div>
-      <p>
-        <!-- ACTUALLY PUT INFO HERE -->
-        These are some recent ideas of what the cabinets may look like.
-      </p>
       <br>
-
-      <div class="cm-h1 w3-xxlarge">
-        Interactive Screens
+      <div class="w3-container cm-footer w3-center w3-padding">
+        <a href="https://comcastmediatechcenter.org/">Comcast Media and Technology Center 2020</a>
       </div>
-      <div class="w3-cell-row w3-center">
-        <div class="w3-cell">
-          <img src="static/screen1.png" alt="" style="max-height:400px;">
-        </div>
-        <div class="w3-cell">
-          <img src="static/screen2.png" alt="" style="max-height:400px;">
-        </div>
-        <div class="w3-cell">
-          <img src="static/screen3.png" alt="" style="max-height:400px;">
-        </div>
-      </div>
-      <div class="w3-cell-row w3-center">
-        <div class="w3-cell">
-          <img src="static/screen_physical1.jpg" alt="" style="max-height:400px;">
-        </div>
-        <div class="w3-cell">
-          <img src="static/screen_physical2.jpg" alt="" style="max-height:400px;">
-        </div>
-      </div>
-      <p>
-        <!-- ACTUALLY PUT INFO HERE -->
-        These are screenshots of the screen aplication running. These images showcase how we hope to use this Technology to convey how the modernday advances of additive manufacturing are being put into use.
-
-        <!-- Special click here to see the real deal doing its thing! -->
-        <div class="cm-h1 w3-xlarge">
-          Want to see these screens live? Well now you can! <a href="">Click here</a> for the left screen or <a href="">click here</a> to see the right one.
-        </div>
-      </p>
-      <br>
-
   </body>
 </html>
