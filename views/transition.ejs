@@ -11,6 +11,6 @@
     }
   </style>
   <body>
-    <video src="/renders/<%=video%>.mp4" autoplay type="video/mp4" onended="location.href='<%=target%>';">Not working?</video>
+    <video onloadeddata="this.play();" src="/renders/<%=video%>.mp4" playsinline type="video/mp4" onended="location.href='<%=target%>';">Not working?</video>
   </body>
 </html>
