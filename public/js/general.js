@@ -10,3 +10,15 @@ function expand(id){
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+
+//for the shadow orb_interactive
+var orbState = false;
+function orbInteract(){
+  orbState = !orbState;
+  if(orbState){
+    document.getElementById("orb_interactive").src = "static/shadow_orb/example_on.png";
+  } else {
+    document.getElementById("orb_interactive").src = "static/shadow_orb/example_off.png";
+  }
+}
