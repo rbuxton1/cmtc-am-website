@@ -27,6 +27,7 @@
 }
 
 .cm-button {
+  font-family: kiona;
   background-color: var(--cm-red);
   color: var(--cm-offwhite);
   width: 50%;

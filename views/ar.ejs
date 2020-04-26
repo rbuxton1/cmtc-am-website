@@ -3,19 +3,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="css/am.css">
+    <script src="js/general.js"></script>
     <title> Augmented Reality </title>
   </head>
   <body class="cm-tp">
     <div class="w3-container w3-center">
+      <!-- HEADER SECTION -->
       <div class="cm-h1 w3-xxxlarge w3-center">
         Augmented Reality (AR) Technology
       </div>
-      <p class="w3-medium">
-        Put a whole buncha text about AR here. <br>
-        Eventually replace with a video but for now this. <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
-      </p>
+      <div class="cm-h1 w3-large">
+        AR is the careful combination of multiple disciplines that allow for the augmentation of reality through digitally added content.
+      </div>
+      <hr>
+      <br>
+
+      <!-- CONTENT -->
+      <div class="w3-container w3-center cm-textbox">
+        <button class="w3-button cm-button" onclick="expand('theory')"> >> Theory << </button>
+        <div id="theory" class="w3-container w3-round-large cm-acordian w3-hide">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <button class="w3-button cm-button" onclick="expand('practice')"> >> In Practice << </button>
+        <div id="practice" class="w3-container w3-round-large cm-acordian w3-hide">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+
+    </div>
+
+    <!--FOOTER -->
+    <br>
+    <br>
+    <div class="w3-container cm-footer w3-center w3-padding">
+      <a href="https://comcastmediatechcenter.org/">Comcast Media and Technology Center 2020</a>
     </div>
   </body>
 </html>
