@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | AlphaProject</title>
+    <link rel="shortcut icon" href="/webgl/static/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/webgl/static/TemplateData/style.css">
+    <script src="/webgl/static/TemplateData/UnityProgress.js"></script>
+    <script src="/webgl/static/Build/UnityLoader.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/webgl/static/Build/TestWebGL_LeftScreenDemo.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 75%; height: 1000px;">
+        <script>
+          var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+          var w = h * .7;
+
+          document.getElementById("gameContainer").style.height = h + "px";
+          document.getElementById("gameContainer").style.width = w + "px";
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

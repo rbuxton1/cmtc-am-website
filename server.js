@@ -38,5 +38,8 @@ app.get("/t/panel", function(req, res){
 app.get("/template", function(req, res){
   res.render("template");
 });
+app.get("/webgl", function(req, res){
+  res.render("webgltest");
+});
 
 app.listen(3000, function(){ console.log("Listening on port 3000!"); });
