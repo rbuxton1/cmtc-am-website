@@ -7,31 +7,36 @@ app.use(express.static("public"));
 app.get("/", function(req, res){
   res.render("index");
 });
-app.get("/banner", function(req, res){
-  res.render("banner");
-});
-app.get("/items", function(req, res){
-  res.render("items");
-});
-app.get("/kiosk", function(req, res){
-  res.render("kiosk");
-});
-app.get("/panel", function(req, res){
-  res.render("panel");
-});
-app.get("/pedestal", function(req, res){
-  res.render("pedestal");
-});
-app.get("/ar", function(req, res){
-  res.render("ar");
+app.get("/printer", function(req, res){
+  res.render("printer");
 });
 
-app.get("/t/items", function(req, res){
-  //res.render("transition", {video: "bishop", target: "/items"});
-  res.redirect("/items")
+//LEFT
+app.get("/left/far", function(req, res){
+  res.render("left/far");
 });
-app.get("/t/panel", function(req, res){
-  res.render("transition", {video: "panel", target: "/panel"});
+app.get("/left/near", function(req, res){
+  res.render("left/near");
+});
+app.get("/left/banner", function(req, res){
+  res.render("left/banner");
+});
+app.get("/left/legs", function(req, res){
+  res.render("left/legs");
+});
+
+//RIGHT
+app.get("/right/far", function(req, res){
+  res.render("right/far");
+});
+app.get("/right/near", function(req, res){
+  res.render("right/near");
+});
+app.get("/right/banner", function(req, res){
+  res.render("right/banner");
+});
+app.get("/right/legs", function(req, res){
+  res.render("right/legs");
 });
 
 //TEST!! REMOVE BEFORE PRODUCTION

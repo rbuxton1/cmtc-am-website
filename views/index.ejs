@@ -8,7 +8,7 @@
   <body>
     <button class="w3-center w3-button cm-button" onclick="location.href='/ar';" style="width:100%;">This experience uses Augmented Reality (AR) technologies. If this is your first time experiencing such things then you might like to click here.</button>
 
-    <div class="w3-display-container">
+    <div class="w3-display-container" style="width:100%; height:100%;">
       <img src="static/cmtc_art.png" alt="ugh" class="w3-image" style="width:100%;">
 
       <div class="w3-display-middle">
@@ -17,25 +17,27 @@
         </div>
       </div>
       <div class="w3-display-middle w3-row" style="width:100%;height:100%;">
-        <div class="w3-col s4 w3-center" style="transform: translateY(100%);">
+        <div class="w3-col s4 w3-center" style="transform: translateY(60%);">
           <!-- LEFT -->
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/banner';"></button>
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/t/items';"></button>
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/pedestal';"></button>
+          <button class="w3-container w3-button w3-opacity" style="height:15%; width:75%;" onclick="location.href='/left/banner';"></button>
+          <div class="w3-row">
+            <button class="w3-container w3-button w3-opacity w3-cell" style="height:30%; width:30%;" onclick="location.href='/left/far';"></button>
+            <button class="w3-container w3-button w3-opacity w3-cell" style="height:30%; width:30%;" onclick="location.href='/left/near';"></button>
+          </div>
         </div>
         <div class="w3-col s4 w3-center">
           <!-- CENTER -->
           <div class="w3-row">
-            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/t/panel';"></button>
-            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/kiosk';"></button>
-            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/t/panel';"></button>
+            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/left/panel';"></button>
+            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/printer';"></button>
+            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/right/panel';"></button>
           </div>
         </div>
         <div class="w3-col s4 w3-center" style="transform: translateY(100%);">
           <!-- RIGHT -->
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/banner';"></button>
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/t/items';"></button>
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/pedestal';"></button>
+          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/right/banner';"></button>
+          <button class="w3-container w3-button w3-opacity" style="height:20%; width:50%;" onclick="location.href='/right/far';"></button>
+          <button class="w3-container w3-button w3-opacity" style="height:20%; width:50%;" onclick="location.href='/right/near';"></button>
         </div>
       </div>
     </div>

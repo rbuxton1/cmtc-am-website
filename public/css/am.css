@@ -22,7 +22,7 @@
 }
 
 .cm-textbox {
-  width:75%;
+  width:100%;
   margin:auto;
 }
 
@@ -45,4 +45,16 @@
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+.cm-infopane {
+  background-color: var(--cm-black);
+  color: var(--cm-offwhite);
+  overflow: scroll;
+}
+
+
+.cm-imagepane {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
