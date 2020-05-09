@@ -8,34 +8,37 @@
   <body>
     <button class="w3-center w3-button cm-button" onclick="location.href='/ar';" style="width:100%;">This experience uses Augmented Reality (AR) technologies. If this is your first time experiencing such things then you might like to click here.</button>
 
-    <div class="w3-display-container">
-      <img src="static/cmtc_art.png" alt="ugh" class="w3-image" style="width:100%;">
+    <div class="w3-display-container cm-imagepane" style="width:100%; height:100%; background-image: url('/static/backgrounds/main.png'); ">
 
       <div class="w3-display-middle">
-        <div class="cm-h1 w3-xlarge" style="transform: translateY(-1000%);">
+        <div class="cm-h1 w3-xlarge w3-center" style="transform: translateY(-1000%);">
           Click on one of the elements of the scene to learn more!
         </div>
       </div>
       <div class="w3-display-middle w3-row" style="width:100%;height:100%;">
-        <div class="w3-col s4 w3-center" style="transform: translateY(100%);">
+        <div class="w3-col s4 w3-center" style="transform: translate(-10%, 60%);">
           <!-- LEFT -->
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/banner';"></button>
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/t/items';"></button>
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/pedestal';"></button>
+          <button class="w3-container w3-button w3-opacity" style="height:15%; width:75%;" onclick="location.href='/t/main/left/poster';"></button>
+          <div class="w3-row">
+            <button class="w3-container w3-button w3-opacity w3-cell" style="height:30%; width:30%;" onclick="location.href='/t/main/left/far';"></button>
+            <button class="w3-container w3-button w3-opacity w3-cell" style="height:30%; width:30%;" onclick="location.href='/t/main/left/near';"></button>
+          </div>
         </div>
         <div class="w3-col s4 w3-center">
           <!-- CENTER -->
-          <div class="w3-row">
-            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/t/panel';"></button>
-            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/kiosk';"></button>
-            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:100%; height:50%; transform:translateY(50%);" onclick="location.href='/t/panel';"></button>
+          <div class="w3-row" style="transform: translate(5%, 45%);">
+            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:50%; width:30%;" onclick="location.href='/t/main/left/legs';"></button>
+            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:50%; width:30%;" onclick="location.href='/t/main/printer';"></button>
+            <button class="w3-button w3-col s4 w3-center w3-opacity" style="height:50%; width:30%;" onclick="location.href='/t/main/right/legs';"></button>
           </div>
         </div>
-        <div class="w3-col s4 w3-center" style="transform: translateY(100%);">
+        <div class="w3-col s4 w3-center" style="transform: translate(10%, 60%);">
           <!-- RIGHT -->
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/banner';"></button>
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/t/items';"></button>
-          <button class="w3-container w3-button w3-opacity" style="height:10%; width:100%;" onclick="location.href='/pedestal';"></button>
+          <button class="w3-container w3-button w3-opacity" style="height:15%; width:75%;" onclick="location.href='/t/main/right/poster';"></button>
+          <div class="w3-row">
+            <button class="w3-container w3-button w3-opacity w3-cell" style="height:30%; width:30%;" onclick="location.href='/t/main/right/near';"></button>
+            <button class="w3-container w3-button w3-opacity w3-cell" style="height:30%; width:30%;" onclick="location.href='/t/main/right/far';"></button>
+          </div>
         </div>
       </div>
     </div>

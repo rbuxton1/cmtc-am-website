@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="/css/am.css">
+    <script src="/js/general.js"></script>
+    <title> PROTOTYPE AM </title>
+  </head>
+  <body>
+
+    <div class="w3-display-container cm-imagepane" style="width:100%; height:100%; background-image: url('/static/backgrounds/ped_far_right.png'); ">
+
+      <!-- LINKS -->
+      <button class="w3-display-topright w3-container w3-button w3-opacity" style="height:15%; width:75%;" onclick="location.href='/t/right/far/poster';"></button>
+      <button class="w3-display-left w3-container w3-button w3-opacity" style="height:60%; width:20%; transform: translate(80%, -25%);" onclick="location.href='/t/right/far/near';"></button>
+
+      <div class="w3-display-right w3-container cm-infopane" style="height:95%; width:25%;">
+        <!-- HEADER SECTION -->
+        <div class="cm-h1 w3-xxxlarge w3-center">
+          Far Right Pedestal
+        </div>
+        <div class="cm-h1 w3-large">
+          The goal of these pedestals is to utilize additive manufacturing in order to create highly unique displays that are visually interesting and are also tailored to the objects displayed on them.​
+        </div>
+        <hr>
+        <br>
+        <!-- CONTENT -->
+        <div class="w3-container w3-center cm-textbox">
+          The designs for the pedestals first began as a brainstorming session. This was when ideas for display objects were still very new so both the pedestals and the display object concepts evolved together. The goal was to integrate the display as much as possible with the objects themselves. Below are some pictures of that process.<br>
+          <button class="w3-button cm-button" onclick="expand('design')"> >> Design process << </button>
+          <div id="design" class="w3-container w3-round-large cm-acordian w3-hide">
+            <img class="w3-image" src="/static/pedestals/sketch1.png" alt="">
+            <img class="w3-image" src="/static/pedestals/sketch2.jpg" alt="">
+            <img class="w3-image" src="/static/pedestals/sketch3.jpg" alt="">
+            <img class="w3-image" src="/static/pedestals/sketch3.jpg" alt="">
+            To help narrow down the options from the first sketch to the final, a survey was sent out. Using the data gathered from the conjoint survey, the five most-liked designs were determined. These top five designs were then included in a subsequent survey which sought to test a user's visual interest in each pedestal and willingness to approach it. This subsequent survey shows that the pedestal in the top left corner of the last image ranked highest in all categories. Below is a render of what that may look like. <br>
+            <figure>
+              <img class="w3-image" src="/static/pedestals/render.png" alt="ohh nooo">
+              <figcaption>The most popular pedestal.</figcaption>
+            </figure>
+          </div>
+      </div>
+    </div>
+
+      <!-- LAST -->
+      <button class="w3-display-topmiddle w3-center w3-button cm-button" onclick="location.href='/t/ped_far_right';" style="width:100%;"> HOME </button>
+    </div>
+
+    <!--FOOTER -->
+    <br>
+    <br>
+    <br>
+    <div class="w3-container cm-footer w3-center w3-padding">
+      <a href="https://comcastmediatechcenter.org/">Comcast Media and Technology Center 2020</a>
+    </div>
+  </body>
+</html>
