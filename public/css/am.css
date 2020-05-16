@@ -51,6 +51,8 @@
   background-color: var(--cm-black);
   color: var(--cm-offwhite);
   padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
   /*overflow: scroll;*/
 }
 
