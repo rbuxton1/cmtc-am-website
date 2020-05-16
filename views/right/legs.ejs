@@ -7,105 +7,108 @@
     <title> PROTOTYPE AM </title>
   </head>
   <body>
-    <div class="w3-display-container cm-imagepane" style="width:100%; height:100%; background-image: url('/static/backgrounds/screen_right.png'); ">
-
+    <div class="w3-display-container cm-imagepane" style="width:100%;">
+      <img src="/static/backgrounds/screen_right.png" alt="" style="width: 100%;">
 
       <!-- LINKS -->
       <button class="w3-display-topright w3-container w3-button w3-opacity" style="height:40%; width:35%;" onclick="location.href='/t/right/legs/poster';"></button>
       <button class="w3-display-bottomright w3-container w3-button w3-opacity" style="height:40%; width:40%;" onclick="location.href='/t/right/legs/near';"></button>
       <button class="w3-display-left w3-container w3-button w3-opacity" style="height:100%; width:20%;" onclick="location.href='/t/right/legs/printer';"></button>
 
-
-      <!-- infopane -->
-      <div class="w3-display-bottomleft w3-container cm-infopane" style="height:75%; width:30%;">
-        <div class="cm-h1 w3-xxxlarge w3-center">
-          Legs and Virtual Screens
-        </div>
-        <div class="cm-h1 w3-large">
-          The leg structures are special in that they have been engineered to be made using Additive manufacturing and as such had a lot of thought behind them.
-        </div>
-        <hr>
-        <br>
-
-        <div class="w3-container w3-center cm-textbox">
-          <button class="w3-button cm-button" onclick="expand('cabinet')" style="width:50%;"> >> Legs << </button>
-          <div id="cabinet" class="w3-container w3-round-large cm-acordian w3-hide">
-            <div class="w3-cell-row w3-center">
-              <div class="w3-cell">
-                <img class="w3-image" src="static/cabinet1.jpg" alt="" style="max-height:400px;">
-              </div>
-              <div class="w3-cell">
-                <img class="w3-image" src="static/cabinet2.jpg" alt="" style="max-height:400px;">
-              </div>
-            </div>
-            <p>
-              <!-- ACTUALLY PUT INFO HERE -->
-              The leg structure design was inspired by spacecraft landers, which can be seen in the shape created by the two structures flanking the central printer and the printer itself. Each leg structure stands 5 feet tall and supports a pair of interactive touchscreens. The structures are designed to make use of additive manufacturing, including the usage of topology optimization to add visual interest and provide a learning opportunity to showcase what additive manufacturing can create, even on a large scale.
-            </p>
-
-            <div class="w3-xxlarge cm-h1">
-              Techniques Used
-            </div>
-            <button class="w3-button cm-button" onclick="expand('topo')">Topological Optimization</button>
-            <div id="topo" class="w3-container w3-hide">
-              <div class="w3-cell-row w3-center">
-                <div class="w3-cell">
-                  <img class="w3-image" src="static/panel_opt1.png" alt="" style="max-height:400px;">
-                </div>
-                <div class="w3-cell">
-                  <img class="w3-image" src="static/panel_opt2.png" alt="" style="max-height:400px;">
-                </div>
-                <div class="w3-cell">
-                  <img class="w3-image" src="static/panel_opt3.png" alt="" style="max-height:400px;">
-                </div>
-              </div>
-              <p>
-                <!-- ACTUALLY PUT INFO HERE -->
-                Topology optimization is the process of minimizing the material required to satisfy a set of loading conditions. The result is a reduction of weight and material waste while also decreasing manufacturing time. Additive manufacturing enables the production of designs created using topology optimization. The patterns used for this structure were created using a variety of loading conditions beyond those strictly required for the structure, and evaluated by potential users for their visual appeal and perceived stability. Users preferred the patterns that are more symmetric in both vertical and horizontal directions, leading to the selection above of panels to be used in each leg structure.
-              </p>
-            </div>
-          </div>
-
-          <button class="w3-button cm-button" onclick="expand('screens')" style="width:50%;"> >> Screens << </button>
-          <div id="screens" class="class w3-container w3-round-large cm-acordian w3-hide">
-            <div class="w3-cell-row w3-center">
-              <div class="w3-cell">
-                <img src="static/screen_physical1.jpg" alt="" style="max-height:400px;">
-              </div>
-              <div class="w3-cell">
-                <img src="static/screen_physical2.jpg" alt="" style="max-height:400px;">
-              </div>
-            </div>
-            <p>
-              This is what the screens looked like during development of the legs. Notice that they are on temporary stands and that the version of the system running on them may be slightly different from that which you would see in person (or through the web versions available below).
-            </p>
-            <div class="w3-cell-row w3-center">
-              <div class="w3-cell">
-                <img src="static/screen1.png" alt="" style="max-height:400px;">
-              </div>
-              <div class="w3-cell">
-                <img src="static/screen2.png" alt="" style="max-height:400px;">
-              </div>
-              <div class="w3-cell">
-                <img src="static/screen3.png" alt="" style="max-height:400px;">
-              </div>
-            </div>
-            <p>
-              <!-- ACTUALLY PUT INFO HERE -->
-              These are screenshots of the screen application running. These images showcase how we hope to use this Technology to convey how the modern day advances of additive manufacturing are being put into use. <br>
-
-              The left screen focuses on spacecraft history, one potential application of additive manufacturing, while the right screen showcases applications of additive manufacturing that are advancing other industries: healthcare and medical devices, transportation, and housing. Throughout are principles and best practices for additive manufacturing.
-
-              <!-- Special click here to see the real deal doing its thing! -->
-              <div class="cm-h1 w3-xlarge">
-                Want to see these screens live? Well now you can! <a href="/webgl">Click here</a> for the left screen or <a href="/webgl">click here</a> to see the right one.
-              </div>
-            </p>
-          </div>
-      </div> </div>
-
       <!-- LAST -->
+      <div class="w3-display-bottommiddle cm-h1 w3-xxxlarge" style="transform: translate(-50%, -250%)">
+        VV SCROLL TO READ MORE VV
+      </div>
       <button class="w3-display-topmiddle w3-center w3-button cm-button" onclick="location.href='/t/legs_right';" style="width:100%;"> HOME </button>
+    </div>
+
+    <!-- infopane -->
+    <div class="w3-container cm-infopane">
+      <div class="cm-h1 w3-xxxlarge w3-center">
+        Legs and Virtual Screens
+      </div>
+      <div class="cm-h1 w3-large">
+        The leg structures are special in that they have been engineered to be made using Additive manufacturing and as such had a lot of thought behind them.
+      </div>
+      <hr>
+      <br>
+
+      <div class="w3-container w3-center cm-textbox">
+        <button class="w3-button cm-button" onclick="expand('cabinet')" style="width:50%;"> >> Legs << </button>
+        <div id="cabinet" class="w3-container w3-round-large cm-acordian w3-hide">
+          <div class="w3-cell-row w3-center">
+            <div class="w3-cell">
+              <img class="w3-image" src="static/cabinet1.jpg" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img class="w3-image" src="static/cabinet2.jpg" alt="" style="max-height:400px;">
+            </div>
+          </div>
+          <p>
+            <!-- ACTUALLY PUT INFO HERE -->
+            The leg structure design was inspired by spacecraft landers, which can be seen in the shape created by the two structures flanking the central printer and the printer itself. Each leg structure stands 5 feet tall and supports a pair of interactive touchscreens. The structures are designed to make use of additive manufacturing, including the usage of topology optimization to add visual interest and provide a learning opportunity to showcase what additive manufacturing can create, even on a large scale.
+          </p>
+
+          <div class="w3-xxlarge cm-h1">
+            Techniques Used
+          </div>
+          <button class="w3-button cm-button" onclick="expand('topo')">Topological Optimization</button>
+          <div id="topo" class="w3-container w3-hide">
+            <div class="w3-cell-row w3-center">
+              <div class="w3-cell">
+                <img class="w3-image" src="static/panel_opt1.png" alt="" style="max-height:400px;">
+              </div>
+              <div class="w3-cell">
+                <img class="w3-image" src="static/panel_opt2.png" alt="" style="max-height:400px;">
+              </div>
+              <div class="w3-cell">
+                <img class="w3-image" src="static/panel_opt3.png" alt="" style="max-height:400px;">
+              </div>
+            </div>
+            <p>
+              <!-- ACTUALLY PUT INFO HERE -->
+              Topology optimization is the process of minimizing the material required to satisfy a set of loading conditions. The result is a reduction of weight and material waste while also decreasing manufacturing time. Additive manufacturing enables the production of designs created using topology optimization. The patterns used for this structure were created using a variety of loading conditions beyond those strictly required for the structure, and evaluated by potential users for their visual appeal and perceived stability. Users preferred the patterns that are more symmetric in both vertical and horizontal directions, leading to the selection above of panels to be used in each leg structure.
+            </p>
+          </div>
+        </div>
+
+        <button class="w3-button cm-button" onclick="expand('screens')" style="width:50%;"> >> Screens << </button>
+        <div id="screens" class="class w3-container w3-round-large cm-acordian w3-hide">
+          <div class="w3-cell-row w3-center">
+            <div class="w3-cell">
+              <img src="static/screen_physical1.jpg" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/screen_physical2.jpg" alt="" style="max-height:400px;">
+            </div>
+          </div>
+          <p>
+            This is what the screens looked like during development of the legs. Notice that they are on temporary stands and that the version of the system running on them may be slightly different from that which you would see in person (or through the web versions available below).
+          </p>
+          <div class="w3-cell-row w3-center">
+            <div class="w3-cell">
+              <img src="static/screen1.png" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/screen2.png" alt="" style="max-height:400px;">
+            </div>
+            <div class="w3-cell">
+              <img src="static/screen3.png" alt="" style="max-height:400px;">
+            </div>
+          </div>
+          <p>
+            <!-- ACTUALLY PUT INFO HERE -->
+            These are screenshots of the screen application running. These images showcase how we hope to use this Technology to convey how the modern day advances of additive manufacturing are being put into use. <br>
+
+            The left screen focuses on spacecraft history, one potential application of additive manufacturing, while the right screen showcases applications of additive manufacturing that are advancing other industries: healthcare and medical devices, transportation, and housing. Throughout are principles and best practices for additive manufacturing.
+
+            <!-- Special click here to see the real deal doing its thing! -->
+            <div class="cm-h1 w3-xlarge">
+              Want to see these screens live? Well now you can! <a href="/webgl">Click here</a> for the left screen or <a href="/webgl">click here</a> to see the right one.
+            </div>
+          </p>
+        </div>
+      </div>
     </div>
 
     <!--FOOTER -->

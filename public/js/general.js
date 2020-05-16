@@ -22,3 +22,8 @@ function orbInteract(){
     document.getElementById("orb_interactive").src = "static/shadow_orb/example_off.png";
   }
 }
+
+//Detect mobile
+function isMobile(){
+  return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent));
+}

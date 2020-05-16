@@ -50,7 +50,8 @@
 .cm-infopane {
   background-color: var(--cm-black);
   color: var(--cm-offwhite);
-  overflow: scroll;
+  padding-bottom: 10%;
+  /*overflow: scroll;*/
 }
 
 
