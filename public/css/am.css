@@ -16,6 +16,14 @@
   font-family: kiona;
 }
 
+.cm-scroll-indicator {
+  font-family: kiona;
+  background-color: var(--cm-black);
+  color: var(--cm-offwhite);
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
 .cm-tp {
   background-color: var(--cm-black);
   color: var(--cm-offwhite);
