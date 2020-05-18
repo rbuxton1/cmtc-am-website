@@ -23,6 +23,9 @@ app.use(express.static("public"));
 app.get("/", function(req, res){
   res.render("index");
 });
+app.get("/ar", function(req, res){
+  res.render("ar");
+});
 app.get("/left/printer", function(req, res){
   res.render("printer");
 });
