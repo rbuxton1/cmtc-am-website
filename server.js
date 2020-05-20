@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const session = require('express-session');
 
 var symmTrans =[{src: "far", dst: "poster"},
                 {src: "far", dst: "near"},
@@ -19,10 +20,22 @@ var indiTrans =["ped_far_left",
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
+app.use(session({
+                  secret: 'keyboard cat',
+                  cookie: {}
+                }));
 
 app.get("/", function(req, res){
-  res.render("index");
+  if(req.session.notnew) {
+    res.render("index");
+  } else {
+    res.redirect("/help");
+  }
 });
+app.get("/help", function(req, res){
+  req.session.notnew = true;
+  res.render("help");
+})
 app.get("/ar", function(req, res){
   res.render("ar");
 });

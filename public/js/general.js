@@ -23,6 +23,34 @@ function orbInteract(){
   }
 }
 
+//small info fade in out
+var pos = 0;
+var forward = true;
+function fadeInOut(id, texts){
+  var e = document.getElementById(id);
+  var timer = setInterval(function(){
+    console.log(forward + " " + e.style.opacity);
+    if(!e.style.opacity) e.style.opacity = 1;
+    e.innerHTML = texts[0];
+
+    if(forward){
+      console.log("forward");
+      e.style.opacity -= .1;
+      if(e.style.opacity <= .1){
+        e.style.opacity = 0;
+        forward = false;
+      }
+    } else {
+      e.style.opacity += .1;
+      if(e.style.opacity == 1) {
+        console.log("triggered");
+        forward = true;
+        e.innerHTML = texts[pos];
+      }
+    }
+  }, 50);
+}
+
 //Detect mobile
 function isMobile(){
   return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent));

@@ -12,7 +12,8 @@ services:
     expose:
       - "3000"
     environment:
-      VIRTUAL_HOST: amkiosk.localhost
+      NGINX_SERVER_NAME: localhost
+      VIRTUAL_HOST: kiosk.*
   db:
     image: mysql:5.7
     restart: always
@@ -33,11 +34,12 @@ services:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
-      VIRTUAL_HOST: blog.localhost
+      NGINX_SERVER_NAME: localhost
+      VIRTUAL_HOST: blog.*
 
   nginx-proxy:
     image: jwilder/nginx-proxy
     ports:
-      - 80:80
+      - "80:80"
     volumes:
-      - /var/run/docker.sock:/tmp/docker.sock
+      - /var/run/docker.sock:/tmp/docker.sock:ro
