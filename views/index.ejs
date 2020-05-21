@@ -46,7 +46,7 @@
         Read more <br>
         <img src="/static/triangle.png" alt="" style="width:4%;">
       </div>
-      <div class="w3-display-topleft w3-container cm-button w3-round" onclick="location.href='/help'" style="width:2vw; height:2vw;">
+      <div class="w3-display-topleft w3-container cm-button w3-round" onclick="location.href='/help'" style="width:50px; height:50px;">
         <div class="w3-display-container" style="width:100%; height:100%;">
           <div class="w3-display-middle">
             ?
@@ -104,16 +104,40 @@
           Augmented Reality (AR) is an interactive experience where the real world environment can be modified and added to with computer generated graphics. A lot of the process and thought that goes into this comes down between the disciplines of computer vision and 3D graphics, as the end product is the combination of what <i>can</i> be seen and what <i>should</i> be seen. <br> <br>
 
           In practice this can be seen using our app (links) <a href="/banner">here</a>. In addition to this there are many other real world examples of this, like the popular mobile game Pokémon Go which uses AR to show the users the real world with videogame characters added in. Other examples include auto manufacturers allowing customers to see what's under the hood without actually having to open the hood.
-
-
+        </div>
+        <br> <br>
+        <button class="w3-button cm-button" onclick="expand('about')" style="width:50%;">About our team</button>
+        <div id="about" class="w3-container w3-round-large cm-acordian w3-hide">
+          <div class="w3-row w3-center">
+            <div class="w3-third">
+              <img src="/static/milo.jpg" alt="" class="w3-image">
+            </div>
+            <div class="w3-twothird">
+              <div class="cm-h1">
+                Milo Lynx
+              </div>
+              <div class="cm-text">
+                Mascot // Placeholder // Great Guy
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!--FOOTER -->
     <div class="w3-container cm-footer w3-center w3-padding">
+      <hr>
       <a href="https://comcastmediatechcenter.org/">
-        <img src="/static/cmtc.png" alt="">
+        <img src="/static/cmtc.png" alt="" class="w3-image">
+      </a>
+      <br> <br>
+      <a href="https://testflight.apple.com/join/iJlZcYOz">
+        <img src="/static/appstore.svg" alt="" style="width:200px;" class="w3-image" onclick="location.href='https://testflight.apple.com/join/iJlZcYOz'">
+      </a>
+      <br> <br>
+      <a href="/w2m.apk">
+        <img src="/static/playstore.png" alt="" style="width:200px;" class="w3-image">
       </a>
     </div>
   </body>

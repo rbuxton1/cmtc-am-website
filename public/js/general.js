@@ -17,9 +17,9 @@ var orbState = false;
 function orbInteract(){
   orbState = !orbState;
   if(orbState){
-    document.getElementById("orb_interactive").src = "static/shadow_orb/example_on.png";
+    document.getElementById("orb_interactive").src = "/static/shadow_orb/example_on.png";
   } else {
-    document.getElementById("orb_interactive").src = "static/shadow_orb/example_off.png";
+    document.getElementById("orb_interactive").src = "/static/shadow_orb/example_off.png";
   }
 }
 
@@ -49,9 +49,4 @@ function fadeInOut(id, texts){
       }
     }
   }, 50);
-}
-
-//Detect mobile
-function isMobile(){
-  return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent));
 }

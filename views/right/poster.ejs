@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="/css/am.css">
     <script src="/js/general.js"></script>
-    <title> PROTOTYPE AM </title>
+    <title> Right AR  </title>
   </head>
   <body>
     <div class="w3-display-container cm-imagepane" style="width:100%;">
@@ -15,15 +15,11 @@
       <button class="w3-display-bottomright w3-container w3-button w3-opacity" style="height:25%; width:50%;" onclick="location.href='/t/right/poster/far';"></button>
       <button class="w3-display-left w3-container w3-button w3-opacity" style="height:50%; width:25%;" onclick="location.href='/t/right/poster/legs';"></button>
 
-
-
-
       <!-- LAST -->
       <div class="w3-display-bottommiddle w3-center cm-scroll-indicator w3-large " style="transform: translate(-50%, -350%)">
         Read more <br>
         <img src="/static/triangle.png" alt="" style="width:4%;">
       </div>
-      <button class="w3-display-topmiddle w3-center w3-button cm-button" onclick="location.href='/t/poster_right';" style="width:100%;"> HOME </button>
     </div>
 
     <!-- infopane -->
@@ -32,7 +28,7 @@
         AR Posters and Companion App
       </div>
       <div class="cm-h1 w3-large">
-        Through the use of the companion app (links iOS and Android here), the experience of the kiosk can be enjoyed even from the comfort of your own home!
+        Through the use of the companion app (<a href="https://testflight.apple.com/join/iJlZcYOz">iOS</a> and <a href="/w2m.apk">Android</a>), the experience of the kiosk can be enjoyed even from the comfort of your own home!
       </div>
       <hr>
       <br>
@@ -40,14 +36,16 @@
       <!-- CONTENT -->
       <div class="w3-container w3-center cm-textbox">
         This technology is super exciting and innovative in terms of what it can be used for and what it will be able to show to the users. Some interesting examples include the use of AR to "see" what's under the hood of a new car without having to open it, or the ability to visualize new structures in physical spaces. <br>
-        Below we have included images of the posters which should allow for you to take the companion app (links) and view what it would look like on the surface of Mars! In addition to this we have included static screenshots incase you do not wish to use your phone for the full experience. <br>
-        <button class="w3-button cm-button" onclick="expand('sample')"> >> Take a look out of the Window to Mars! << </button>
+        Below we have included images of the posters which should allow for you to take the companion app (links) and view what it would look like on the surface of Mars! In addition to this we have included static screenshots incase you do not wish to use your phone for the full experience. <br> <br>
+        <button class="w3-button cm-button" onclick="expand('sample')">Take a look out of the Window to Mars!</button>
+        <br>
         <div id="sample" class="w3-container w3-round-large cm-acordian w3-hide">
           <figure>
             <img class="w3-image" src="/static/ar/window1.jpg" alt="ohh nooo">
             <figcaption>First window, say hi to the rover!</figcaption>
           </figure>
-          <button class="w3-button cm-button" onclick="expand('phone1')"> >> Show spoiler << </button>
+          <button class="w3-button cm-button" onclick="expand('phone1')"> Show spoiler </button>
+          <br>
           <figure id="phone1" class="w3-hide">
             <img class="w3-image" src="/static/ar/mars_phone1.jpg" alt="ohh nooo" style="width:50%;">
             <figcaption>Here's what that looks like through the phone!</figcaption>
@@ -57,7 +55,8 @@
             <img class="w3-image" src="/static/ar/window2.jpg" alt="oh nooo 2">
             <figcaption>Second window (can you see Phobos and Deimos?)</figcaption>
           </figure>
-          <button class="w3-button cm-button" onclick="expand('phone2')"> >> Show spoiler << </button>
+          <button class="w3-button cm-button" onclick="expand('phone2')"> Show spoiler </button>
+          <br>
           <figure id="phone2" class="w3-hide">
             <img class="w3-image" src="/static/ar/mars_phone2.jpg" alt="ohh nooo" style="width:50%;">
             <figcaption>Here's what that looks like through the phone!</figcaption>
@@ -66,9 +65,22 @@
       </div>
     </div>
 
+    <!-- HEADER -->
+    <button class="w3-center w3-button cm-home-header" onclick="location.href='/t/poster_right';" style="width:100%;"> HOME </button>
     <!--FOOTER -->
     <div class="w3-container cm-footer w3-center w3-padding">
-      <a href="https://comcastmediatechcenter.org/">Comcast Media and Technology Center 2020</a>
+      <hr>
+      <a href="https://comcastmediatechcenter.org/">
+        <img src="/static/cmtc.png" alt="" class="w3-image">
+      </a>
+      <br> <br>
+      <a href="https://testflight.apple.com/join/iJlZcYOz">
+        <img src="/static/appstore.svg" alt="" style="width:200px;" class="w3-image" onclick="location.href='https://testflight.apple.com/join/iJlZcYOz'">
+      </a>
+      <br> <br>
+      <a href="/w2m.apk">
+        <img src="/static/playstore.png" alt="" style="width:200px;" class="w3-image">
+      </a>
     </div>
   </body>
 </html>
