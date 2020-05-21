@@ -24,6 +24,11 @@ a:visited{
   font-size: 2.5rem;
 }
 
+.cm-h2 {
+  font-family: kiona;
+  font-size: 1.5rem;
+}
+
 .cm-text {
   font-family: kiona;
   font-size: vw;
@@ -71,6 +76,11 @@ a:visited{
 .cm-acordian {
   background-color: var(--cm-gray);
   color: var(--cm-offwhite);
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  text-align: left;
 }
 
 .cm-footer {

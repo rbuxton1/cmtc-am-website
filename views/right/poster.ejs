@@ -25,41 +25,105 @@
     <!-- infopane -->
     <div class="w3-container cm-infopane">
       <div class="cm-h1 w3-xxxlarge w3-center">
-        AR Posters and Companion App
+        Augmented Reality (AR) Banner and Companion App
       </div>
-      <div class="cm-h1 w3-large">
-        Through the use of the companion app (<a href="https://testflight.apple.com/join/iJlZcYOz">iOS</a> and <a href="/w2m.apk">Android</a>), the experience of the kiosk can be enjoyed even from the comfort of your own home!
-      </div>
-      <hr>
       <br>
 
       <!-- CONTENT -->
       <div class="w3-container w3-center cm-textbox">
-        This technology is super exciting and innovative in terms of what it can be used for and what it will be able to show to the users. Some interesting examples include the use of AR to "see" what's under the hood of a new car without having to open it, or the ability to visualize new structures in physical spaces. <br>
-        Below we have included images of the posters which should allow for you to take the companion app (links) and view what it would look like on the surface of Mars! In addition to this we have included static screenshots incase you do not wish to use your phone for the full experience. <br> <br>
-        <button class="w3-button cm-button" onclick="expand('sample')">Take a look out of the Window to Mars!</button>
-        <br>
-        <div id="sample" class="w3-container w3-round-large cm-acordian w3-hide">
+        Through the use of the companion app (<a href="https://testflight.apple.com/join/iJlZcYOz">iOS</a> and <a href="/w2m.apk">Android</a>), the experience of the kiosk can be enjoyed even from the comfort of your own home! The augmented reality experience is enabled by the conjunction of a physical image and the programming within the app. <br> <br>
+        This innovative and exciting technology can be used for and what it will be able to show to the users. Some interesting examples include the use of AR to "see" what's under the hood of a new car without having to open it, or the ability to visualize new structures in physical spaces. <br> <br>
+        <b>NOTE: </b> Eliminating glare may help in seamless AR viewing. <br> <br>
+        <button class="w3-button cm-button" onclick="expand('banner')">AR Banner</button>
+        <div id="banner" class="w3-container w3-round-large cm-acordian w3-hide">
           <figure>
-            <img class="w3-image" src="/static/ar/window1.jpg" alt="ohh nooo">
-            <figcaption>First window, say hi to the rover!</figcaption>
+            <img class="w3-image" src="/static/ar/left.jpg" alt="ohh nooo">
+            <figcaption>
+              Point your phone camera here!
+            </figcaption>
           </figure>
-          <button class="w3-button cm-button" onclick="expand('phone1')"> Show spoiler </button>
-          <br>
+          <button class="w3-button cm-button" onclick="expand('phone1')">Show spoiler</button>
           <figure id="phone1" class="w3-hide">
             <img class="w3-image" src="/static/ar/mars_phone1.jpg" alt="ohh nooo" style="width:50%;">
             <figcaption>Here's what that looks like through the phone!</figcaption>
           </figure>
-          <br>
+
           <figure>
-            <img class="w3-image" src="/static/ar/window2.jpg" alt="oh nooo 2">
-            <figcaption>Second window (can you see Phobos and Deimos?)</figcaption>
+            <img class="w3-image" src="/static/ar/right.jpg" alt="ohh nooo">
+            <figcaption>
+              Point your phone camera here!
+            </figcaption>
           </figure>
-          <button class="w3-button cm-button" onclick="expand('phone2')"> Show spoiler </button>
-          <br>
+          <button class="w3-button cm-button" onclick="expand('phone2')">Show spoiler</button>
           <figure id="phone2" class="w3-hide">
             <img class="w3-image" src="/static/ar/mars_phone2.jpg" alt="ohh nooo" style="width:50%;">
             <figcaption>Here's what that looks like through the phone!</figcaption>
+          </figure>
+          The AR banner is inspired by Lockheed Martin Mars Base Camp Lander and allows you to take a peak onto the surface of Mars. ​<br> <br>
+          By pointing your phone camera towards the two banners you are able to view different perspectives of Mars. Try and spot the Martian Rover, Phobos and Deimos!
+        </div>
+        <br> <br>
+        <button class="w3-button cm-button" onclick="expand('cards')">AR Cards</button>
+        <div id="cards" class="w3-container w3-round-large cm-acordian w3-hide">
+          <div class="cm-h1">
+            AR Cards
+          </div>
+          The AR Cards are a narrative series portraying humanity’s “north star” (Mars) and its vessel (Orion), and ultimate arrival and colonization of Mars. Additionally, both cards are metaphorical keys that, when combined together, show humanity’s dream of making Mars our own. <br> <br>
+          By pointing your phone camera towards the separate cards you can experience holograms of Mars and Orion. Try it out, and see what happens when you point your camera at the combined cards!
+          <div class="cm-h1">
+            AR Cards Demo
+          </div>
+          <video src="/AR_Demo.mp4" controls style="width:100%;">If you can see this something is wrong</video>
+          <div class="cm-h1">
+            Card 1
+          </div>
+          <div class="w3-row" style="max-height:400px;">
+            <div class="w3-half">
+              <figure>
+                <img src="/static/cards/card1_cover.jpg" class="w3-image">
+                <figcaption>
+                  <b>Cover</b>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="w3-half">
+              <figure>
+                <img src="/static/cards/card1_back.jpg" class="w3-image">
+                <figcaption>
+                  <b>Back</b> - Point your camera here!
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="cm-h1">
+            Card 2
+          </div>
+          <div class="w3-row" style="max-height:400px;">
+            <div class="w3-half">
+              <figure>
+                <img src="/static/cards/card2_cover.jpg" class="w3-image">
+                <figcaption>
+                  <b>Cover</b>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="w3-half">
+              <figure>
+                <img src="/static/cards/card2_back.jpg" class="w3-image">
+                <figcaption>
+                  <b>Back</b> - Point your camera here!
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="cm-h1">
+            Combined
+          </div>
+          <figure>
+            <img src="/static/cards/combined.png" class="w3-image"style="max-height:400px;">
+            <figcaption>
+              <b>Card 1 and 2's backs combine!</b>
+            </figcaption>
           </figure>
         </div>
       </div>
