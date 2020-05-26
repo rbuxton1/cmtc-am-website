@@ -1,0 +1,21 @@
+[
+  {
+    "endpoint": "",
+    "title": "Far Left Pedestal",
+    "image": "/static/backgrounds/ped_far_left.png",
+    "links": [
+              {
+                "container": "w3-display-topleft",
+                "width": "75%",
+                "height": "15%",
+                "dest": "/t/left/far/poster"
+              },
+              {
+                "container": "w3-display-right",
+                "width": "50%",
+                "height": "50%",
+                "dest": "/t/left/far/near"
+              }],
+    "content": "pages/far.html"
+  }
+]

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const session = require('express-session');
+const fs = require("fs");
 
 var symmTrans =[{src: "far", dst: "poster"},
                 {src: "far", dst: "near"},
@@ -175,5 +176,10 @@ app.get("/template", function(req, res){
 app.get("/webgl", function(req, res){
   res.render("webgltest");
 });
+app.get("/test", function(req, res){
+  var data = JSON.parse(fs.readFileSync('pages.json', 'utf8'));
+  var page = fs.readFileSync(data[0].content);
+  res.render("template", {title: data[0].title, image: data[0].image, links: data[0].links, content: page});
+})
 
 app.listen(3000, function(){ console.log("Listening on port 3000!"); });
