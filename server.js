@@ -42,6 +42,13 @@ app.get("/t", function(req, res){
   });
 });
 
+app.get("/leftwebgl", function(req, res){
+  res.render("webgltemplate", {container: "/webgl/left/Build/Left_Screen_WebGL_DONE.json"});
+});
+app.get("/rightwebgl", function(req, res){
+  res.render("webgltemplate", {container: "/webgl/right/Build/Right_Screen_WebGL_DONE.json"});
+});
+
 console.log("Loaded " + pages.length + " pages and " + transitions.length + " tranistions!");
 
 app.listen(3000, function(){ console.log("Listening on port 3000!"); });
