@@ -14,10 +14,10 @@
   </style>
   <body class="cm-tp">
     <div class="w3-display-container">
-      <video onloadeddata="this.play();" src="<%=video%>" playsinline  controls type="video/mp4" onended="location.href='<%=target%>';">Not working? Click <a href="<%=target%>">here</a> to move to the next page.</video>
+      <video onloadeddata="this.play();" src="/renders/transitions/<%=video%>" playsinline  controls type="video/mp4" onended="location.href='<%=dst%>';">Not working? Click <a href="<%=dst%>">here</a> to move to the next page.</video>
 
       <!-- LAST -->
-      <button class="w3-display-topmiddle w3-center w3-button cm-button" onclick="location.href='<%=target%>';" style="width:100%;"> SKIP </button>
+      <button class="w3-display-topmiddle w3-center w3-button cm-button" onclick="location.href='<%=dst%>';" style="width:100%;"> SKIP </button>
     </div>
   </body>
 </html>

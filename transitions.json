@@ -1,0 +1,52 @@
+[
+  {"src": "static", "dst": "leftposter", "v":"/left/far_poster.mp4"},
+  {"src": "static", "dst": "dynamic", "v":"/left/far_near.mp4"},
+
+  {"src": "leftposter", "dst": "static", "v":"/left/poster_far.mp4"},
+  {"src": "leftposter", "dst": "dynamic", "v":"/left/poster_near.mp4"},
+
+  {"src": "dynamic", "dst": "static", "v":"/left/near_far.mp4"},
+  {"src": "dynamic", "dst": "leftposter", "v":"/left/near_poster.mp4"},
+  {"src": "dynamic", "dst": "leftleg", "v":"/left/near_legs.mp4"},
+
+  {"src": "leftlegs", "dst": "dynamic", "v":"/left/legs/legs_near.mp4"},
+  {"src": "leftlegs", "dst": "printer", "v":"/left/legs_printer.mp4"},
+  {"src": "leftlegs", "dst": "leftposter", "v":"/left/legs_poster.mp4"},
+
+  {"src": "printer", "dst": "legsleft", "v":"/left/printer_legs.mp4"},
+  {"src": "printer", "dst": "rightlegs", "v":"/right/printer_legs.mp4"},
+
+  {"src": "rightlegs", "dst": "printer", "v":"/right/legs_printer.mp4"},
+  {"src": "rightlegs", "dst": "recreational", "v":"/right/legs_near.mp4"},
+  {"src": "rightlegs", "dst": "rightposter", "v":"/right/legs_poster.mp4"},
+
+  {"src": "recreational", "dst": "rightlegs", "v":"/right/near_legs.mp4"},
+  {"src": "recreational", "dst": "rightposter", "v":"/right/near_poster.mp4"},
+  {"src": "recreational", "dst": "artistic", "v":"/right/near_far.mp4"},
+
+  {"src": "rightposter", "dst": "recreational", "v":"/right/poster_near.mp4"},
+  {"src": "rightposter", "dst": "artistic", "v":"/right/poster_far.mp4"},
+
+  {"src": "artistic", "dst": "rightposter", "v":"/right/poster_far.mp4"},
+  {"src": "artistic", "dst": "recreational", "v":"/right/far_near.mp4"},
+
+  {"src": "home", "dst": "static", "v":"/home/ped_far_left.mp4"},
+  {"src": "home", "dst": "leftposter", "v":"/home/poster_left.mp4"},
+  {"src": "home", "dst": "dynamic", "v":"/home/ped_near_left.mp4"},
+  {"src": "home", "dst": "leftlegs", "v":"/home/screen_left.mp4"},
+  {"src": "home", "dst": "printer", "v":"/home/printer.mp4"},
+  {"src": "home", "dst": "rightlegs", "v":"/home/screen_right.mp4"},
+  {"src": "home", "dst": "recreational", "v":"/home/ped_near_right.mp4"},
+  {"src": "home", "dst": "rightposter", "v":"/home/poster_right.mp4"},
+  {"src": "home", "dst": "artistic", "v":"/home/ped_far_right.mp4"},
+
+  {"src": "static", "dst": "home", "v":"/to_home/ped_far_left.mp4"},
+  {"src": "leftposter", "dst": "home", "v":"/to_home/poster_left.mp4"},
+  {"src": "dynamic", "dst": "home", "v":"/to_home/ped_near_left.mp4"},
+  {"src": "leftlegs", "dst": "home", "v":"/to_home/legs_left.mp4"},
+  {"src": "printer", "dst": "home", "v":"/to_home/printer.mp4"},
+  {"src": "rightlegs", "dst": "home", "v":"/to_home/legs_right.mp4"},
+  {"src": "recreational", "dst": "home", "v":"/to_home/ped_near_right.mp4"},
+  {"src": "rightposter", "dst": "home", "v":"/to_home/poster_right.mp4"},
+  {"src": "artistic", "dst": "home", "v":"/to_home/ped_far_right.mp4"}  
+]

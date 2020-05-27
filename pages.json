@@ -1,7 +1,7 @@
 [
   {
-    "endpoint": "",
-    "title": "Far Left Pedestal",
+    "endpoint": "static",
+    "title": "Static Items Pedestal",
     "image": "/static/backgrounds/ped_far_left.png",
     "links": [
               {
@@ -16,6 +16,62 @@
                 "height": "50%",
                 "dest": "/t/left/far/near"
               }],
-    "content": "pages/far.html"
+    "content": "partials/static.ejs"
+  },
+  {
+    "endpoint": "dynamic",
+    "title": "Dynamic Items Pedestal",
+    "image": "/static/backgrounds/ped_near_left.png",
+    "links": [],
+    "content": "partials/dynamic.ejs"
+  },
+  {
+    "endpoint": "artistic",
+    "title": "Artistic Items Pedestal",
+    "image": "/static/backgrounds/ped_far_right.png",
+    "links": [],
+    "content": "partials/artistic.ejs"
+  },
+  {
+    "endpoint": "recreational",
+    "title": "Recreational Items Pedestal",
+    "image": "/static/backgrounds/ped_near_right.png",
+    "links": [],
+    "content": "partials/recreational.ejs"
+  },
+  {
+    "endpoint": "leftlegs",
+    "title": "Left Legs and Screen",
+    "image": "/static/backgrounds/screen_left.png",
+    "links": [],
+    "content": "partials/legs.ejs"
+  },
+  {
+    "endpoint": "rightlegs",
+    "title": "Right Legs and Screen",
+    "image": "/static/backgrounds/screen_right.png",
+    "links": [],
+    "content": "partials/legs.ejs"
+  },
+  {
+    "endpoint": "leftposter",
+    "title": "Left AR Poster",
+    "image": "/static/backgrounds/poster_left.png",
+    "links": [],
+    "content": "partials/poster.ejs"
+  },
+  {
+    "endpoint": "rightposter",
+    "title": "Right AR Poster",
+    "image": "/static/backgrounds/poster_right.png",
+    "links": [],
+    "content": "partials/poster.ejs"
+  },
+  {
+    "endpoint": "printer",
+    "title": "Printer",
+    "image": "/static/backgrounds/printer.png",
+    "links": [],
+    "content": "partials/printer.ejs"
   }
 ]
