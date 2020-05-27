@@ -12,7 +12,7 @@
 
       <!-- LINKS -->
       <% links.forEach(function(link){ %>
-        <button class="<%=link.container%> w3-container w3-button w3-opacity" style="height:<%=link.height;%>; width:<%=link.width;%>;" onclick="location.href='<%=link.dest;%>';"></button>
+        <button class="<%=link.container%> w3-container w3-button w3-opacity" style="height:<%=link.height;%>; width:<%=link.width;%>;" onclick="location.href='/t?src=<%=endpoint%>&dst=<%=link.dest;%>';"></button>
       <% }); %>
 
 
