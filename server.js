@@ -3,8 +3,9 @@ const app = express();
 const session = require('express-session');
 const fs = require("fs");
 
-var pages = JSON.parse(fs.readFileSync('pages.json', 'utf8'));
-var transitions = JSON.parse(fs.readFileSync('transitions.json', 'utf8'));
+var pages = JSON.parse(fs.readFileSync('json/pages.json', 'utf8'));
+var transitions = JSON.parse(fs.readFileSync('json/transitions.json', 'utf8'));
+var team = JSON.parse(fs.readFileSync('json/team.json', 'utf8'));
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -15,7 +16,7 @@ app.use(session({
 
 app.get("/", function(req, res){
   if(req.session.notnew) {
-    res.render("index");
+    res.render("index", {members: team});
   } else {
     res.redirect("/help");
   }
