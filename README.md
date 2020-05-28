@@ -1,6 +1,7 @@
 # Additive Manufacturing Virtual Kiosk
 This application was developed as a companion to the CMTC Additive Manufacturing Kiosk project and offered a way for users to interact with the kiosk that does not require them to be in the same physical space as the kiosk itself but still get the majority of the experience.
 ## Installation
+**This project uses LFS. You will have to install Git LFS to use this.**
 To install this application first you will either need NodeJS or Docker. A Dockerfile is supplied with the code so if you choose that option all you will need to do is build the project and run the code straight from there.
 To install with NodeJS it is almost as simple, first requiring you to install NodeJS, and then requiring you to type `node server.js` to start it.
 By default the server will connect to port 3000. This can either be changed by editing the last line of the `server.js` file if running through node, or by exposing a different port if running through Docker.

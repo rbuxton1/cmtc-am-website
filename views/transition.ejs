@@ -13,11 +13,17 @@
     }
   </style>
   <body class="cm-tp">
+    <%
+      if(video == "NONE"){
+        return res.redirect(dst);
+      }
+    %>
     <div class="w3-display-container">
       <video onloadeddata="this.play();" src="/renders/transitions/<%=video%>" playsinline  controls type="video/mp4" onended="location.href='<%=dst%>';">Not working? Click <a href="<%=dst%>">here</a> to move to the next page.</video>
 
       <!-- LAST -->
-      <button class="w3-display-topmiddle w3-center w3-button cm-button" onclick="location.href='<%=dst%>';" style="width:100%;"> SKIP </button>
+      <!-- HEADER -->
+      <button class="w3-center w3-button cm-home-header" onclick="location.href='<%=dst%>';" style="width:100%;"> SKIP </button>
     </div>
   </body>
 </html>

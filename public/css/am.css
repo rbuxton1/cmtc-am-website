@@ -70,7 +70,8 @@ a:visited{
   overflow: visible;
   overflow-wrap: break-word;
   white-space: normal;
-  width:50%;
+  width:100%;
+  margin: 10px;
 }
 
 .cm-acordian {
