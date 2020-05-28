@@ -12,6 +12,7 @@
   {"src": "leftlegs", "dst": "dynamic", "v":"/left/legs/legs_near.mp4"},
   {"src": "leftlegs", "dst": "printer", "v":"/left/legs_printer.mp4"},
   {"src": "leftlegs", "dst": "leftposter", "v":"/left/legs_poster.mp4"},
+  {"src": "leftlegs", "dst": "leftwebgl", "v": null},
 
   {"src": "printer", "dst": "leftlegs", "v":"/left/printer_legs.mp4"},
   {"src": "printer", "dst": "rightlegs", "v":"/right/printer_legs.mp4"},
@@ -19,6 +20,7 @@
   {"src": "rightlegs", "dst": "printer", "v":"/right/legs_printer.mp4"},
   {"src": "rightlegs", "dst": "recreational", "v":"/right/legs_near.mp4"},
   {"src": "rightlegs", "dst": "rightposter", "v":"/right/legs_poster.mp4"},
+  {"src": "rightlegs", "dst": "rightwebgl", "v": null},
 
   {"src": "recreational", "dst": "rightlegs", "v":"/right/near_legs.mp4"},
   {"src": "recreational", "dst": "rightposter", "v":"/right/near_poster.mp4"},

@@ -109,6 +109,12 @@
                 "height": "100%",
                 "width": "20%",
                 "dest": "printer"
+              },
+              {
+                "container": "w3-display-middle",
+                "height": "55%",
+                "width": "20%",
+                "dest": "leftwebgl"
               }],
     "content": "partials/legs.ejs"
   },
@@ -134,6 +140,12 @@
                 "height": "100%",
                 "width": "40%",
                 "dest": "printer"
+              },
+              {
+                "container": "w3-display-middle",
+                "height": "55%",
+                "width": "20%",
+                "dest": "rightwebgl"
               }],
     "content": "partials/legs.ejs"
   },

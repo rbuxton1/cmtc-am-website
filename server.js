@@ -38,7 +38,11 @@ pages.forEach(function(page){
 app.get("/t", function(req, res){
   transitions.forEach(function(t){
     if(t.src == req.query.src && t.dst == req.query.dst){
-      res.render("transition", {dst: "/" + t.dst, video: t.v});
+      if(t.v != null){
+        res.render("transition", {dst: "/" + t.dst, video: t.v});
+      } else {
+        res.redirect("/" + t.dst);
+      }
     }
   });
 });

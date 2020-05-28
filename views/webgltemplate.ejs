@@ -15,23 +15,31 @@
     </script>
   </head>
 
-  <body>
+  <body class="cm-tp">
     <div class="webgl-content w3-display-container" style="height:100%; width:100%;">
       <div class="w3-display-middle" id="gameContainer">
         <script>
-          var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-          var w = h * .6;
+          var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - 100;
+          var w = (h/16) * 9;
 
           document.getElementById("gameContainer").style.height = h + "px";
           document.getElementById("gameContainer").style.width = w + "px";
         </script>
       </div>
-      <button class="w3-display-left w3-button cm-button" onclick="location.href='/';" style="width:33%;"> >> HOME << </button>
-    </div>
-    <div class="cm-tp">
-      <div class="cm-h1">
-        Kiosk Screens
+
+      <div class="w3-display-bottommiddle w3-center cm-scroll-indicator w3-hide-small">
+        Read more <br>
+        <img src="/static/triangle.png" alt="" style="width:4%;">
       </div>
     </div>
+    <hr>
+    <div class="w3-container cm-infopane">
+      <div class="w3-container cm-textbox">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+
+    <!-- Header -->
+    <button class="w3-center w3-button cm-home-header" onclick="location.href='/';" style="width:100%;"> HOME </button>
   </body>
 </html>

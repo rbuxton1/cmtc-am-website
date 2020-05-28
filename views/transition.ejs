@@ -13,11 +13,6 @@
     }
   </style>
   <body class="cm-tp">
-    <%
-      if(video == "NONE"){
-        return res.redirect(dst);
-      }
-    %>
     <div class="w3-display-container">
       <video onloadeddata="this.play();" src="/renders/transitions/<%=video%>" playsinline  controls type="video/mp4" onended="location.href='<%=dst%>';">Not working? Click <a href="<%=dst%>">here</a> to move to the next page.</video>
 
