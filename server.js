@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const session = require('express-session');
 const fs = require("fs");
+const useragent = require('useragent');
 
 var pages = JSON.parse(fs.readFileSync('json/pages.json', 'utf8'));
 var transitions = JSON.parse(fs.readFileSync('json/transitions.json', 'utf8'));
@@ -52,6 +53,19 @@ app.get("/leftwebgl", function(req, res){
 });
 app.get("/rightwebgl", function(req, res){
   res.render("webgltemplate", {container: "/webgl/right/Build/Right_Screen_WebGL_DONE.json"});
+});
+
+app.get("/applinks", function(req, res){
+  var agent = useragent.parse(req.headers['user-agent']);
+
+  //These links will need to be updated as soon as they have actual store links.
+  if(agent.os.toString().includes("iOS")){
+    res.redirect("https://testflight.apple.com/join/iJlZcYOz");
+  } else if (agent.os.toString().includes("Android")) {
+    res.redirect("/w2m.apk");
+  } else {
+    res.redirect("/");
+  }
 });
 
 console.log("Loaded " + pages.length + " pages and " + transitions.length + " tranistions!");
