@@ -70,4 +70,4 @@ app.get("/applinks", function(req, res){
 
 console.log("Loaded " + pages.length + " pages and " + transitions.length + " tranistions!");
 
-app.listen(80, function(){ console.log("Listening on port 80!"); });
+app.listen(3000, function(){ console.log("Listening on port 3000!"); });
