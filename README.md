@@ -4,7 +4,7 @@ This application was developed as a companion to the CMTC Additive Manufacturing
 **This project uses LFS. You will have to install Git LFS to use this.**
 To install this application first you will either need NodeJS or Docker. A Dockerfile is supplied with the code so if you choose that option all you will need to do is build the project and run the code straight from there.
 To install with NodeJS it is almost as simple, first requiring you to install NodeJS, and then requiring you to type `node server.js` to start it.
-By default the server will connect to port 3000. This can either be changed by editing the last line of the `server.js` file if running through node, or by exposing a different port if running through Docker.
+By default the server will connect to port 80, **if you plan on running the service on port 80 like a normal website you will have to modify the privileges on lower ports.** I used [this](https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps#give-safe-user-permission-to-use-port-80) to accomplish this. You can also run through a privileged account or route internally using NGINX etc.
 ## Routing
 Routing is completed through the combination of the `transitions.json` and `pages.json` files.
 ### pages.JSON
