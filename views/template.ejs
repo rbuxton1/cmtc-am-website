@@ -29,12 +29,24 @@
         <div class="cm-h1">
           Quick links
         </div>
-        <div class="w3-cell-row w3-center">
-          <% links.forEach(function(link){ %>
-            <div class="w3-container w3-cell">
-              <a href="/t?src=<%=endpoint%>&dst=<%=link.dest;%>"> <%=link.dest%> </a>
-            </div>
-          <% }) %>
+        <div class="w3-container">
+          <% links.forEach(function(link){
+              [{"dest":"printer", "title":"3D Printer"},
+               {"dest":"static", "title":"Static Display Items"},
+               {"dest":"dynamic", "title":"Dynamic Display Items"},
+               {"dest":"recreational", "title":"Recreational Display Items"},
+               {"dest":"artistic", "title":"Artistic Display Items"},
+               {"dest":"leftlegs", "title":"Left Legs and Screen"},
+               {"dest":"rightlegs", "title":"Right Legs and Screen"},
+               {"dest":"leftposter", "title":"Left Poster"},
+               {"dest":"rightposter", "title":"Right Poster"}].forEach(function(pair){
+                 if(pair.dest == link.dest){ %>
+                   <div class="w3-container w3-cell w3-mobile">
+                     <a href="/t?src=<%=endpoint%>&dst=<%=link.dest;%>"> <%=pair.title%> </a>
+                   </div>
+                 <% }
+               });
+            }); %>
         </div>
         <br>
         <%- include(content) %>

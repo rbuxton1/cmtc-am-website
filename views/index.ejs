@@ -16,7 +16,7 @@
           Click to navigate to each scene. <br>
           Information about each is provided below.
         </div>
-        
+
         <div class="w3-third">
           <!-- Left Third -->
           <button class="w3-container w3-button w3-opacity" style="height:35%; width:100%;" onclick="location.href='/t?src=home&dst=leftposter';"></button>
@@ -60,7 +60,26 @@
     </div>
 
     <!-- infopane -->
-    <div class="w3-container w3-center cm-infopane">
+    <div class="w3-container cm-infopane">
+      <div class="cm-h1">
+        Quick links
+      </div>
+      <div class="w3-container">
+        <% [{"title":"Static Display Items", "dest":"static"},
+            {"title":"Dynamic Display Items", "dest":"dynamic"},
+            {"title":"Left Poster", "dest":"leftposter"},
+            {"title":"Left Legs and Screen", "dest":"leftlegs"},
+            {"title":"Printer", "dest":"printer"},
+            {"title":"Right Legs and Screen", "dest":"rightlegs"},
+            {"title":"Right Poster", "dest":"rightposter"},
+            {"title":"Recreational Display Items", "dest":"recreational"},
+            {"title":"Artistic Display Items", "dest":"artistic"}].forEach(function(link){ %>
+              <div class="w3-container w3-center w3-cell w3-mobile">
+                <a href="/t?src=home&dst=<%=link.dest;%>"> <%=link.title%> </a>
+              </div>
+        <% }); %>
+      </div>
+
       <!-- HEADER SECTION -->
       <div class="cm-h1 w3-center">
         Additive Manufacturing Kiosk
@@ -83,7 +102,7 @@
           Fundemental Information
         </div>
         Description of this section: Basic fundamental information necessary for a user to know prior or during the experience of the Kiosk. <br>
-        <button class="w3-button cm-button" onclick="expand('nav')" style="width:50%;">// Basic / Mobile Navigation //</button>
+        <!--<button class="w3-button cm-button" onclick="expand('nav')" style="width:50%;">// Basic / Mobile Navigation //</button>
         <div id="nav" class="w3-container w3-round-large cm-acordian w3-hide">
           Basic navigation of the site is done through clicking on different regions of space on the kiosk to move. Once clicked, the camera will move to the area selected. Further information and details are available for viewing in the “Read More” below.
           <br>
@@ -100,8 +119,7 @@
             <li><a href="/rightlegs">Right Lander Legs </a></li>
             <li><a href="/printer">Additive Manufacturing (AM): Machines and Techniques</a></li>
           </ul>
-        </div>
-        <br> <br>
+        </div> -->
         <button class="w3-button cm-button" onclick="expand('ar')" style="width:50%;">// App / AR Integration //</button>
         <div id="ar" class="w3-container w3-round-large cm-acordian w3-hide">
           Augmented Reality (AR) is an interactive experience where computer generated graphics can be manifested within live camera feeds such as on a phone. In practice this can be seen in examples such as the popular mobile game Pokémon Go which uses AR to show the users the real world with videogame characters added in. Other examples include auto manufacturers allowing customers to see what's under the hood without actually having to open the hood.
@@ -117,7 +135,7 @@
           </a>
 
         </div>
-        <br> <br>
+
         <button class="w3-button cm-button" onclick="expand('about')" style="width:50%;">// Meet the CMTC Team //</button>
         <div id="about" class="w3-container w3-round-large cm-acordian w3-hide">
           <% members.forEach(function(member, i){ %>
