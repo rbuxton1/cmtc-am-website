@@ -9,7 +9,7 @@
   {"src": "dynamic", "dst": "leftposter", "v":"/left/near_poster.mp4"},
   {"src": "dynamic", "dst": "leftlegs", "v":"/left/near_legs.mp4"},
 
-  {"src": "leftlegs", "dst": "dynamic", "v":"/left/legs/legs_near.mp4"},
+  {"src": "leftlegs", "dst": "dynamic", "v":"/left/legs_near.mp4"},
   {"src": "leftlegs", "dst": "printer", "v":"/left/legs_printer.mp4"},
   {"src": "leftlegs", "dst": "leftposter", "v":"/left/legs_poster.mp4"},
   {"src": "leftlegs", "dst": "leftwebgl", "v": null},

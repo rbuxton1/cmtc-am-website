@@ -26,6 +26,17 @@
     <!-- INFOPANE // CONTENT AREA-->
     <div class="w3-container cm-infopane">
       <div class="w3-container cm-textbox">
+        <div class="cm-h1">
+          Quick links
+        </div>
+        <div class="w3-cell-row w3-center">
+          <% links.forEach(function(link){ %>
+            <div class="w3-container w3-cell">
+              <a href="/t?src=<%=endpoint%>&dst=<%=link.dest;%>"> <%=link.dest%> </a>
+            </div>
+          <% }) %>
+        </div>
+        <br>
         <%- include(content) %>
       </div>
     </div>
