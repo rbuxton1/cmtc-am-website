@@ -60,8 +60,10 @@ app.get("/applinks", function(req, res){
 
   //These links will need to be updated as soon as they have actual store links.
   if(agent.os.toString().includes("iOS")){
+    //If the device is iOS redirect to Apple App Store
     res.redirect("https://testflight.apple.com/join/iJlZcYOz");
   } else if (agent.os.toString().includes("Android")) {
+    //If the device is Android redirect to Google Play Store
     res.redirect("/w2m.apk");
   } else {
     res.redirect("/");
