@@ -49,10 +49,10 @@ app.get("/t", function(req, res){
 });
 
 app.get("/leftwebgl", function(req, res){
-  res.render("webgltemplate", {container: "/webgl/left/Build/Left_Screen_WebGL_DONE.json"});
+  res.render("webgltemplate", {container: "/webgl/left/Build/LEFT_SCREEN_DONE.json"});
 });
 app.get("/rightwebgl", function(req, res){
-  res.render("webgltemplate", {container: "/webgl/right/Build/Right_Screen_WebGL_DONE.json"});
+  res.render("webgltemplate", {container: "/webgl/right/Build/RIGHT_SCREEN_DONE.json"});
 });
 
 app.get("/applinks", function(req, res){
