@@ -1,9 +1,9 @@
 {
 "companyName": "DefaultCompany",
 "productName": "AlphaProject",
-"dataUrl": "Left_Screen_WebGL_DONE.data.unityweb",
-"wasmCodeUrl": "Left_Screen_WebGL_DONE.wasm.code.unityweb",
-"wasmFrameworkUrl": "Left_Screen_WebGL_DONE.wasm.framework.unityweb",
+"dataUrl": "LEFT_SCREEN_DONE.data.unityweb",
+"wasmCodeUrl": "LEFT_SCREEN_DONE.wasm.code.unityweb",
+"wasmFrameworkUrl": "LEFT_SCREEN_DONE.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
