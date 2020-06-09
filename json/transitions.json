@@ -4,6 +4,7 @@
 
   {"src": "leftposter", "dst": "static", "v":"/left/poster_far.mp4"},
   {"src": "leftposter", "dst": "dynamic", "v":"/left/poster_near.mp4"},
+  {"src": "leftposter", "dst": "leftlegs", "v":"/left/poster_legs.mp4"},
 
   {"src": "dynamic", "dst": "static", "v":"/left/near_far.mp4"},
   {"src": "dynamic", "dst": "leftposter", "v":"/left/near_poster.mp4"},
@@ -28,8 +29,9 @@
 
   {"src": "rightposter", "dst": "recreational", "v":"/right/poster_near.mp4"},
   {"src": "rightposter", "dst": "artistic", "v":"/right/poster_far.mp4"},
+  {"src": "rightposter", "dst": "rightlegs", "v":"/right/poster_legs.mp4"},
 
-  {"src": "artistic", "dst": "rightposter", "v":"/right/poster_far.mp4"},
+  {"src": "artistic", "dst": "rightposter", "v":"/right/far_poster.mp4"},
   {"src": "artistic", "dst": "recreational", "v":"/right/far_near.mp4"},
 
   {"src": "home", "dst": "static", "v":"/home/ped_far_left.mp4"},
