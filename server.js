@@ -64,7 +64,7 @@ app.get("/applinks", function(req, res){
     res.redirect("https://apps.apple.com/us/app/window-to-mars/id1497805924");
   } else if (agent.os.toString().includes("Android")) {
     //If the device is Android redirect to Google Play Store
-    res.redirect("/w2m.apk");
+    res.redirect("https://play.google.com/store/apps/details?id=com.CMTC.WindowToMars");
   } else {
     res.redirect("/");
   }
@@ -72,4 +72,4 @@ app.get("/applinks", function(req, res){
 
 console.log("Loaded " + pages.length + " pages and " + transitions.length + " tranistions!");
 
-app.listen(80, function(){ console.log("Listening on port 80!"); });
+app.listen(8080, function(){ console.log("Listening on port 80!"); });
