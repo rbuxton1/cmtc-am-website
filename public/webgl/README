@@ -1,0 +1,1 @@
+These are the compiled files for the AM Kiosk Screens. They will require a webpage to load them, below is the webpage used in the AM Kiosk Site. It is in EJS, but it will render as an HTML if you save it as such. Currently it is set up to play the left screen but if you replace everywhere it says left to right it will work for the right screen as well.
